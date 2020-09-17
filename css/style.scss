@@ -1,4 +1,4 @@
-@import 'input', 'globals', 'buttons';
+@import 'input', 'globals', 'buttons', 'loader';
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -62,8 +62,13 @@ main {
       }
     }
   }
-}
 
+  .footer {
+    position: absolute;
+    bottom: 0;
+    font-size: .8em;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   main {
@@ -124,6 +129,12 @@ main {
       }
     }
   }
+
+  .footer {
+    small {
+      font-size: .6em;
+    }
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -146,6 +157,12 @@ main {
         font-weight: bold;
         color: $primary;
       }
+    }
+  }
+
+  .footer {
+    small {
+      font-size: .5em;
     }
   }
 }

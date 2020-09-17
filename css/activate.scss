@@ -1,0 +1,97 @@
+@import 'input';
+@import 'buttons';
+@import 'globals';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: rgb(31, 31, 31);
+
+  .main {
+    height: 100vh;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
+  p {
+    font-size: .9rem;
+  }
+}
+
+.back {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+
+  img {
+    height: 25% !important;
+    width: 25%;
+    margin: 20px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  font-size: .8em;
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .logo {
+    img {
+      width: 15%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    p {
+      font-size: 2.3rem;
+    }
+  }
+
+  .container {
+    width: 70%;
+  }
+}

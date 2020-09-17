@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../css/activate.css">
+  <link rel="icon" href="./../img/gym_logo.png">
+  <title>Activate</title>
+</head>
+<body>
+  <!-- Activate Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-sm">
+      <h3 class="fw-normal">Activation code successful!</h3>
+      <br>
+      <small>You will be redirected to another page. Please wait...</small>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <div class="back">
+      <a href="./../index.html">< Back</a>
+    </div>
+    <div class="logo">
+      <img src="./../img/gym_logo.png" alt="gym-logo">
+      <p>California Fitness Gym</p>
+    </div>
+    <div class="container form-field">
+      <input type="text" class="form-input" name="act-code">
+      <label for="act-code" class="form-label" style="font-size: .9em;">Enter your activation code here</label>
+      <button class="btn">Activate</button>
+    </div>
+    <div style="height: 50px"></div>
+    <div class="container">
+      <p><b>Don't have an activation code?</b> You need to apply for a membership (onsite) before CFG's front desk
+      will give you an activation code.</p>
+    </div>
+    <div class="footer">
+      <small>Copyright © California Fitness Gym 2020</small>
+    </div>
+
+  </main>
+
+  <script>
+    document.getElementsByTagName('button')[0].onclick = () => {
+      document.getElementById('modal').style.display = 'flex';
+      setTimeout(() => {
+        window.location.href = "./act-info.html";
+      }, 3000)
+    }
+  </script>
+</body>
+</html>

@@ -1,3 +1,16 @@
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 400;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .form-field {
   padding-bottom: 20px;
   display: -webkit-box;
@@ -7,16 +20,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.form-field:hover > .form-input {
-  cursor: pointer;
-  border-bottom: 2px solid #4d4d4d;
-  color: #4d4d4d;
-}
-
-.form-field:hover > label {
-  color: #4d4d4d;
 }
 
 .form-field .form-input {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../css/activate.css">
+  <link rel="icon" href="./../img/gym_logo.png">
+  <title>Activate</title>
+</head>
+<body>
+  <!-- Success Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-sm">
+      <h2 class="fw-normal text-center">Success!</h2>
+      <br>
+      <small>You have successfully activated your account! You will be redirected back to the login page.</small>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <div class="logo">
+      <img src="./../img/gym_logo.png" alt="gym-logo">
+      <p>California Fitness Gym</p>
+    </div>
+    <div class="container">
+      <br>
+      <div class="text-center">Welcome, <b>John Doe</b>! </div>
+      <br>
+
+      <div class="text-center">
+        <small>
+          Complete your login details here
+        </small>
+      </div>
+      <div class="form-field">
+        <input type="text" class="form-input" name="username">
+        <label for="username">Username</label>
+        <input type="text" class="form-input" name="password">
+        <label for="password">Password</label>
+        <input type="text" class="form-input" name="conf-password">
+        <label for="conf-password">Confirm password</label>
+      </div>
+      <button class="btn" id="btn">Submit</button>
+    </div>
+
+    <div class="footer">
+      <small>Copyright © California Fitness Gym 2020</small>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('btn').onclick = () => {
+      document.getElementById('modal').style.display = 'flex';
+      setTimeout(() => {
+        window.location.href = "./../index.html";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

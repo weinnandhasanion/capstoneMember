@@ -9,6 +9,9 @@
   <title>California Fitness Gym - Members</title>
 </head>
 <body>
+  <div class="full-page-loader" id="loader">
+    <div class="loader"></div>
+  </div>
   <main>
     <div class="logo">
       <img src="./img/gym_logo.png" alt="gym-logo">
@@ -26,9 +29,20 @@
       <button class="btn">Login</button>
     </div>
     <div class="activate">
-      <p>Not yet activated? <span><a href="#">Click here</a></span></p>
+      <p>Not yet activated? <span><a href="#" id="activate">Click here</a></span></p>
+    </div>
+    <div class="footer">
+      <small>Copyright © California Fitness Gym 2020</small>
     </div>
   </main>
 
+  <script>
+    document.getElementById('activate').onclick = () => {
+      document.getElementById('loader').style.display = 'flex';
+      setTimeout(() => {
+        window.location.href = './pages/activate.html';
+      }, 500);
+    }
+  </script>
 </body>
 </html>

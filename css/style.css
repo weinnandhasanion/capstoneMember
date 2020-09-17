@@ -103,7 +103,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .form-field {
-  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,15 +141,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: black;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-@media only screen and (max-width: 320px) {
-  .form-field {
-    padding-bottom: 0;
-  }
-  .form-field .form-input {
-    font-size: 1rem;
-  }
+  font-size: .8rem;
 }
 
 a {

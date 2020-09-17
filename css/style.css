@@ -626,8 +626,8 @@ main .activate p a:hover {
 }
 
 main .footer {
-  position: absolute;
-  bottom: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   font-size: .8em;
 }
 

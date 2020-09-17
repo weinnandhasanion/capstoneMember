@@ -19,6 +19,18 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center !important;
 }
 
+.text-primary {
+  color: #1f1f1f;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-lighter {
+  color: #4d4d4d;
+}
+
 .fw-100 {
   font-weight: 100;
 }
@@ -162,6 +174,18 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center !important;
 }
 
+.text-primary {
+  color: #1f1f1f;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-lighter {
+  color: #4d4d4d;
+}
+
 .fw-100 {
   font-weight: 100;
 }
@@ -281,6 +305,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .text-center {
   text-align: center !important;
+}
+
+.text-primary {
+  color: #1f1f1f;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-lighter {
+  color: #4d4d4d;
 }
 
 .fw-100 {
@@ -454,6 +490,18 @@ html .main, body .main {
   }
   .container {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .logo p {
+    font-size: 2.8rem;
+  }
+  .container .text-center {
+    font-size: 1.2rem;
+  }
+  .container .text-center small {
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=activate.css.map */

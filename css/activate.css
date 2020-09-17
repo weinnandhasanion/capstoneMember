@@ -467,6 +467,9 @@ html .main, body .main {
   .logo p {
     font-size: 1.5rem;
   }
+  .container {
+    width: 60%;
+  }
   .form-field .form-input {
     padding: 3px 3px 3px 0 !important;
     font-size: 1rem;

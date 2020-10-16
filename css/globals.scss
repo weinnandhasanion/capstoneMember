@@ -2,6 +2,7 @@
 $primary: #2c2c2c;
 $lighter: rgb(77, 77, 77);
 $red: #f53939;
+$green: #117600;
 
 // html body default
 html, body {
@@ -45,6 +46,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .text-red {
   color: $red !important;
+}
+.text-green {
+  color: $green;
 }
 
 // font weights

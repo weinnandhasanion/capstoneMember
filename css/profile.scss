@@ -5,32 +5,83 @@
 }
 
 main {
+  #back {
+    padding: 10px;
+  }
+
   height: 100vh;
   position: relative;
 
   .profile-cont {
     position: absolute;
-    top: 7vh;
+    top: 9vh;
     z-index: 2;
     padding: 20px;
     display: flex;
+    align-items: flex-start;
+
     img {
       height: 13vh;
     }
 
     .name-id {
-      padding: 10px;
+      margin: 10px;
+      margin-top: 0 !important;
     }
   }
 
   .main-cont {
+    padding-top: 0 !important;
     padding: 30px;
     background: white;
     position: absolute;
     width: 100%;
-    bottom: 0;
-    height: 100%;
     top: 20vh;
     border-radius: 25px 25px 0 0;
+
+    .edit-btn-cont {
+      z-index: 3;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .edit-btn {
+        width: 40%;
+      }
+    }
+  
+    .profile-details {
+      display: flex;
+      flex-direction: column;
+  
+      span {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+  
+        small {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .details {
+      margin-bottom: 20px;
+      span {
+        display: flex;
+    
+        p {
+          padding-left: 5px;
+          font-size: 15px;
+        }
+      }
+
+      button {
+        width: 80%;
+        margin: 0 !important;
+        margin-top: 10px !important;
+      }
+    }
   }
 }

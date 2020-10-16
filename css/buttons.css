@@ -47,6 +47,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #f53939 !important;
 }
 
+.text-green {
+  color: #117600;
+}
+
 .fw-100 {
   font-weight: 100;
 }
@@ -138,6 +142,11 @@ p, h1, h2, h3, h4, h5, h6 {
   background: white;
   cursor: pointer;
   font-weight: bold;
+}
+
+.btn.btn-reg {
+  letter-spacing: 0;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -11,16 +11,18 @@
 </head>
 <body>
   <main>
-    <i class="material-icons" style="font-size: 32px;">keyboard_backspace</i>
+    <i class="material-icons" style="font-size: 32px;" id="back">keyboard_backspace</i>
     <div class="profile-cont">
       <img src="./../img/profile_pic.png" alt="profile_pic">
       <div class="name-id">
-        <h3 class="profile-name fw-600 text-white">Weinnand Hasanion</h3>
+        <h3 class="profile-name fw-600 text-white" id="name">Weinnand Hasanion</h3>
         <h4 class="profile-id fw-100 text-white">Member ID: 20080001</h4>
       </div>
     </div>
     <div class="main-cont">
-      <button class="btn">Edit profile</button>
+      <div class="edit-btn-cont">
+        <button class="btn edit-btn btn-reg">Edit profile</button>
+      </div>
       <div class="profile-details">
         <span>
           <i class="material-icons">date_range</i>
@@ -33,7 +35,7 @@
       </div>
       <div class="member-info">
         <h2>Member Info</h2>
-        <div class="contact">
+        <div class="details">
           <h4>Contact</h4>
           <span>
             <i class="material-icons">person</i>
@@ -48,7 +50,7 @@
             <p>0920 601 3530</p>
           </span>
         </div>
-        <div class="personal">
+        <div class="details">
           <h4>Personal</h4>
           <span>
             <i class="material-icons">cake</i>
@@ -63,19 +65,19 @@
             <p>Gun-ob, Lapu-lapu City, Cebu</p>
           </span>
         </div>
-        <div class="subscription">
+        <div class="details">
           <h4>Subscription</h4>
           <span>
             <i class="material-icons">settings</i>
             <p>Gaining</p>
           </span>
-          <button class="btn">
+          <button class="btn btn-reg">
             View subscription status
           </button>
         </div>
-        <div class="qr-code">
+        <div class="details">
           <h4>QR Code</h4>
-          <button class="btn">View QR code</button>
+          <button class="btn btn-reg">View QR code</button>
         </div>
       </div>
     </div>

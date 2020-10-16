@@ -47,6 +47,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #f53939 !important;
 }
 
+.text-green {
+  color: #117600;
+}
+
 .fw-100 {
   font-weight: 100;
 }
@@ -209,6 +213,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #f53939 !important;
 }
 
+.text-green {
+  color: #117600;
+}
+
 .fw-100 {
   font-weight: 100;
 }
@@ -327,6 +335,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .text-red {
   color: #f53939 !important;
+}
+
+.text-green {
+  color: #117600;
 }
 
 .fw-100 {
@@ -475,6 +487,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .text-red {
   color: #f53939 !important;
+}
+
+.text-green {
+  color: #117600;
 }
 
 .fw-100 {

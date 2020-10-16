@@ -951,7 +951,10 @@ main .main-cont .details button {
     height: 12vh !important;
   }
   .profile-cont .name-id h3 {
-    font-size: 1rem !important;
+    font-size: .8rem !important;
+  }
+  .profile-cont .name-id h4 {
+    font-size: .5rem !important;
   }
 }
 

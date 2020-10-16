@@ -30,6 +30,7 @@ main {
     padding-left: 20px;
     display: flex;
     align-items: flex-start;
+    width: 100%;
 
     img {
       height: 13vh;
@@ -122,15 +123,6 @@ main {
 
     img {
       height: 12vh !important;
-    }
-
-    .name-id {
-      h3 {
-        font-size: .8rem !important;
-      }
-      h4 {
-        font-size: .5rem !important;
-      }
     }
   }
 }

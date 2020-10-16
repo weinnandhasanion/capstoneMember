@@ -842,6 +842,7 @@ main .profile-cont {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 100%;
 }
 
 main .profile-cont img {
@@ -949,12 +950,6 @@ main .main-cont .details button {
   }
   .profile-cont img {
     height: 12vh !important;
-  }
-  .profile-cont .name-id h3 {
-    font-size: .8rem !important;
-  }
-  .profile-cont .name-id h4 {
-    font-size: .5rem !important;
   }
 }
 

@@ -2,16 +2,15 @@
 
 .btn {
   margin: 50px 0 25px 0;
-  padding: 10px;
+  padding: 5px;
   font-family: $poppins;
   border: 0;
-  border-radius: 10px;
+  border-radius: 50px;
   width: 100%;
   background: $primary;
   color: white;
   font-size: 1rem;
   letter-spacing: .1em;
-  text-transform: uppercase;
   transition: .3s;
 
   &:hover {

@@ -1,0 +1,36 @@
+@import 'input', 'globals', 'buttons', 'loader';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  position: relative;
+
+  .profile-cont {
+    position: absolute;
+    top: 7vh;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    img {
+      height: 13vh;
+    }
+
+    .name-id {
+      padding: 10px;
+    }
+  }
+
+  .main-cont {
+    padding: 30px;
+    background: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    top: 20vh;
+    border-radius: 25px 25px 0 0;
+  }
+}

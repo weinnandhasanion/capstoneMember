@@ -1,6 +1,18 @@
+html, body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#f53939), to(#a0a0a0));
+  background: linear-gradient(to bottom right, #f53939, #a0a0a0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #2c2c2c;
+}
+
 a {
   text-decoration: none;
-  color: #1f1f1f;
+  color: #2c2c2c;
   font-weight: 400;
   -webkit-transition: .3s;
   transition: .3s;
@@ -20,15 +32,19 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-primary {
-  color: #1f1f1f;
+  color: #2c2c2c !important;
 }
 
 .text-white {
-  color: white;
+  color: white !important;
 }
 
 .text-lighter {
-  color: #4d4d4d;
+  color: #4d4d4d !important;
+}
+
+.text-red {
+  color: #f53939 !important;
 }
 
 .fw-100 {
@@ -121,7 +137,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .loader {
   border: 5px solid #f3f3f3;
   /* Light grey */
-  border-top: 5px solid #1f1f1f;
+  border-top: 5px solid #f53939;
   border-radius: 50%;
   width: 50px;
   height: 50px;

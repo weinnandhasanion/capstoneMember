@@ -122,44 +122,56 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.btn {
-  margin: 50px 0 25px 0;
-  padding: 5px;
-  font-family: "Poppins", sans-serif;
-  border: 0;
-  border-radius: 50px;
-  width: 100%;
-  background: #2c2c2c;
-  color: white;
-  font-size: 1rem;
-  letter-spacing: .1em;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.btn:hover {
-  color: #2c2c2c;
+.sidebar {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  width: 85%;
   background: white;
-  cursor: pointer;
-  font-weight: bold;
+  height: 100vh;
+  padding: 20px;
+  -webkit-box-shadow: 1px 0 20px 0px #2c2c2c;
+          box-shadow: 1px 0 20px 0px #2c2c2c;
+  position: fixed;
+  z-index: 20;
 }
 
-.btn.btn-reg {
-  letter-spacing: 0;
-  padding: 3px;
+.sidebar .items {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.btn.btn-red {
-  background: #f53939;
+.sidebar .items span {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.btn.btn-green {
-  background: #117600;
+.sidebar .items span i {
+  padding-right: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-  .btn {
-    margin: 20px 0 20px 0;
-  }
+.sidebar .items .active {
+  background: #2c2c2c;
+  border-radius: 25px;
+  color: white;
 }
-/*# sourceMappingURL=buttons.css.map */
+
+.sidebar .logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=sidebar.css.map */

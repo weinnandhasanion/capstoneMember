@@ -25,6 +25,12 @@
   letter-spacing: 0;
   padding: 3px;
 }
+.btn.btn-red {
+  background: $red;
+}
+.btn.btn-green {
+  background: $green;
+}
 
 @media only screen and (max-width: 768px) {
   .btn {

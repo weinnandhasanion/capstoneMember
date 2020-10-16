@@ -1,0 +1,39 @@
+@import 'globals';
+
+.sidebar {
+  transform: translateX(-120%);
+  width: 85%;
+  background: white;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 1px 0 20px 0px $primary;
+  position: fixed;
+  z-index: 20;
+
+  .items {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+
+      i {
+        padding-right: 5px;
+      }
+    }
+
+    .active {
+      background: $primary;
+      border-radius: 25px;
+      color: white;
+    }
+  }
+
+  .logout {
+    display: flex;
+    justify-content: center;
+  }
+}

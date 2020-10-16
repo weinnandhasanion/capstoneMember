@@ -1,14 +1,23 @@
-@import 'input', 'globals', 'buttons', 'loader';
+@import 'input', 'globals', 'buttons', 'loader', 'sidebar';
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 main {
-  #back {
-    padding: 10px;
-  }
+  overflow-x: hidden;
+  
+  .menu {
+    padding: 20px;
+    display: flex;
+    align-items: center;
 
+    h2 {
+      padding-left: 10px;
+    }
+  }
+  
+  width: 100vw;
   height: 100vh;
   position: relative;
 
@@ -25,8 +34,13 @@ main {
     }
 
     .name-id {
-      margin: 10px;
+      margin: 5px;
       margin-top: 0 !important;
+
+      h4 {
+        padding-top: 0 !important;
+        font-size: .9em;
+      }
     }
   }
 
@@ -36,11 +50,11 @@ main {
     background: white;
     position: absolute;
     width: 100%;
+    height: auto;
     top: 20vh;
     border-radius: 25px 25px 0 0;
 
     .edit-btn-cont {
-      z-index: 3;
       height: 10vh;
       display: flex;
       align-items: center;
@@ -48,7 +62,12 @@ main {
 
       .edit-btn {
         width: 40%;
+        z-index: 3;
       }
+    }
+
+    .member-info h2 {
+      padding-top: 10px;
     }
   
     .profile-details {
@@ -61,13 +80,14 @@ main {
         padding-bottom: 5px;
   
         small {
-          padding-left: 10px;
+          padding-left: 5px;
         }
       }
     }
 
     .details {
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       span {
         display: flex;
     
@@ -84,4 +104,56 @@ main {
       }
     }
   }
+}
+
+// iPhone 6/7/8 Plus
+@media screen and (min-width: 414px) {
+  .profile-cont {
+    top: 10vh !important;
+  }
+}
+
+// iPhone 6/7/8
+@media screen and (max-width: 375px) {
+  .profile-cont {
+    top: 9vh !important;
+
+    img {
+      height: 12vh !important;
+    }
+  }
+}
+// iPhone X
+@media screen and (min-height: 812px) {
+  .profile-cont {
+    top: 11vh !important;
+  }
+
+  .main-cont {
+    height: 80vh !important;
+  }
+}
+
+// iPhone 5/SE
+@media screen and (max-width: 320px) {
+  p {
+    font-size: .9em !important;
+  }
+  .menu {
+    h2 {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .member-info h2 {
+    font-size: 1.2rem;
+  }
+
+ .profile-cont {
+   top: 8vh !important;
+ }
+
+ .btn-reg {
+   font-size: .8rem !important;
+ }
 }

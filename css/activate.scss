@@ -18,7 +18,12 @@ main {
   margin: auto;
 
   p {
-    font-size: .9rem;
+    font-size: .8rem;
+  }
+
+  div {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -57,7 +62,7 @@ main {
   }
 
   .container {
-    width: 80%;
+    width: 75%;
 
     p {
       margin-top: 2rem !important;

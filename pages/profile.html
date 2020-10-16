@@ -127,10 +127,12 @@
     document.getElementById('menu').onclick = () => {
       sidebar.transition = '0.5s';
       sidebar.transform = 'translateX(0)';
+      document.getElementsByTagName('main')[0].style.overflowY = 'hidden';
     }
 
     document.getElementById('back').onclick = () => {
       sidebar.transform = 'translateX(-120%)';
+      document.getElementsByTagName('main')[0].style.overflowY = 'scroll';
     }
   </script>
 </body>

@@ -950,6 +950,9 @@ main .main-cont .details button {
   .profile-cont img {
     height: 12vh !important;
   }
+  .profile-cont .name-id h3 {
+    font-size: 1.2rem !important;
+  }
 }
 
 @media screen and (min-height: 812px) {

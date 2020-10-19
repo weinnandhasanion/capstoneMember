@@ -39,6 +39,9 @@
   <div class="modal" id="subscription-modal">
     <div class="modal-lg">
       <div class="flex-column">
+        <div class="close-modal">
+          <span href="#" onclick="closeModal(this.parentNode.parentNode.parentNode.parentNode)">&#x2716;</span>
+        </div>
         <h2 class="text-center">Your subscription is currently ongoing.</h2>
         <div class="sub-cont">
           <h3>Monthly Subscription</h3>
@@ -62,6 +65,9 @@
   <div class="modal" id="qr-modal">
     <div class="modal-lg">
       <div class="flex-column">
+        <div class="close-modal">
+          <span href="#" onclick="closeModal(this.parentNode.parentNode.parentNode.parentNode)">&#x2716;</span>
+        </div>
         <img src="./../img/qrCode.png" alt="" style="height: 250px" id="qr-code">
         <div style="height: 50px"></div>
         <p class="text-center"><b>This is your QR code.</b> Present this to the gym staff upon entrance to confirm your ongoing subscription.</p>
@@ -252,6 +258,10 @@
         let fileName = 'qr-code';
 
         saveAs(path, fileName);
+      }
+
+      closeModal = (elem) => {
+        elem.style.display = 'none';
       }
     }
   </script>

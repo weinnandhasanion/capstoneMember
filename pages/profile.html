@@ -81,14 +81,18 @@
   <div class="sidebar" id="sidebar">
     <i class="material-icons" style="font-size: 32px" id="back">keyboard_backspace</i>
     <div class="items">
-      <span class="active">
-        <i class="material-icons">account_circle</i>
-        <h2>Profile</h2>
-      </span>
-      <span>
-        <i class="material-icons">payment</i>
-        <h2>Pay</h2>
-      </span>
+      <a href="#">
+        <span class="active">
+          <i class="material-icons">account_circle</i>
+          <h2>Profile</h2>
+        </span>
+      </a>
+      <a href="./pay.html">
+        <span class="active">
+          <i class="material-icons">payment</i>
+          <h2>Pay</h2>
+        </span>
+      </a>
       <span>
         <i class="material-icons">shopping_cart</i>
         <h2>Promos</h2>
@@ -220,7 +224,7 @@
           targetElement = targetElement.parentNode;
         } while (targetElement);
         sidebar.style.transform = 'translateX(-120%)';
-    });
+      });
 
       document.getElementById('back').onclick = () => {
         sidebar.style.transform = 'translateX(-120%)';

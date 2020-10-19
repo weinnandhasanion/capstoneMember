@@ -111,6 +111,10 @@ main {
 
 // iPhone 6/7/8 Plus
 @media screen and (min-width: 414px) {
+  body {
+    cursor: pointer;
+  }
+
   .profile-cont {
     top: 10vh !important;
 
@@ -122,12 +126,20 @@ main {
 
 // iPhone 6/7/8
 @media screen and (max-width: 375px) {
+  body {
+    cursor: pointer;
+  }
+  
   .profile-cont {
     top: 9vh !important;
   }
 }
 // iPhone X
 @media screen and (min-height: 812px) {
+  body {
+    cursor: pointer;
+  }
+  
   .profile-cont {
     top: 11vh !important;
   }
@@ -139,6 +151,10 @@ main {
 
 // iPhone 5/SE
 @media screen and (max-width: 320px) {
+  body {
+    cursor: pointer;
+  }
+  
   p {
     font-size: .9em !important;
   }

@@ -95,7 +95,7 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   background: rgba(0,0,0,0.6);
   display: none;
-  z-index: 1;
+  z-index: 21;
   position: absolute;
   top: 0;
   margin: 0;
@@ -108,5 +108,35 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
     padding: 7.5% 5%;
     position: relative;
+  }
+
+  .modal-md {
+    width: 75%;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 7.5% 5%;
+    position: relative;
+  }
+
+  .modal-lg {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 7.5% 5%;
+    position: relative;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -8,10 +8,65 @@
   <link rel="stylesheet" href="./../css/profile.css">
   <link rel="icon" href="./../img/gym_logo.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .sub-cont {
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .sub-modal-pay-btn {
+      display: flex;
+      justify-content: center;
+      padding: 20px 20px 0 20px;
+      width: 80%;
+    }
+  </style>
 </head>
 <body>
+  <!-- Logout confirmation modal -->
+  <div class="modal" id="logout-modal">
+    <div class="modal-sm">
+      <p class="fw-600">Are you sure you want to logout?</p>
+      <div style="height: 50px"></div>
+      <div class="modal-footer">
+        <a href="#" id="confirm-logout" class="text-red fw-600">Logout</a>
+        <a href="#" id="cancel-logout">Cancel</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="subscription-modal">
+    <div class="modal-lg">
+      <div class="flex-column">
+        <h2 class="text-center">Your subscription is currently ongoing.</h2>
+        <div class="sub-cont">
+          <h3>Monthly Subscription</h3>
+          <p class="fw-600">Paid</p>
+          <p>Last payment: Aug 14, 2020</p>
+          <p>Expires on: Sep 14, 2020</p>
+        </div>
+        <div class="sub-cont">
+          <h3>Annual Subscription</h3>
+          <p class="fw-600">Paid</p>
+          <p>Last payment: Aug 06, 2020</p>
+          <p>Expires on: Aug 06, 2021</p>
+        </div>
+        <div class="sub-modal-pay-btn">
+          <button class="btn btn-reg">Go to Pay page</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="qr-modal">
+    <div class="modal-lg">
+      QR modal
+    </div>
+  </div>
+
   <div class="sidebar" id="sidebar">
-    <i class="material-icons"  style="font-size: 32px" id="back">keyboard_backspace</i>
+    <i class="material-icons" style="font-size: 32px" id="back">keyboard_backspace</i>
     <div class="items">
       <span class="active">
         <i class="material-icons">account_circle</i>
@@ -43,7 +98,7 @@
       </span>
     </div>
     <div class="logout">
-      <button class="btn btn-red" style="width: 80%">Logout</button>
+      <button class="btn btn-red" style="width: 80%" id="logout-btn">Logout</button>
     </div>
   </div>
   <main>
@@ -110,29 +165,76 @@
             <i class="material-icons">settings</i>
             <p>Gaining</p>
           </span>
-          <button class="btn btn-reg">
+          <button class="btn btn-reg" id="subscription-btn">
             View subscription status
           </button>
         </div>
         <div class="details">
           <h4>QR Code</h4>
-          <button class="btn btn-reg">View QR code</button>
+          <button class="btn btn-reg" id="qr-btn">View QR code</button>
         </div>
       </div>
     </div>
   </main>
 
   <script>
-    let sidebar = document.getElementById('sidebar').style;
-    document.getElementById('menu').onclick = () => {
-      sidebar.transition = '0.5s';
-      sidebar.transform = 'translateX(0)';
-      document.getElementsByTagName('main')[0].style.overflowY = 'hidden';
-    }
+    window.onload = () => {
+      let sidebar = document.getElementById('sidebar').style;
+      document.getElementById('menu').onclick = () => {
+        sidebar.transition = '0.5s';
+        sidebar.transform = 'translateX(0)';
+        document.getElementsByTagName('main')[0].style.overflowY = 'hidden';
+      }
 
-    document.getElementById('back').onclick = () => {
-      sidebar.transform = 'translateX(-120%)';
-      document.getElementsByTagName('main')[0].style.overflowY = 'scroll';
+      document.getElementById('back').onclick = () => {
+        sidebar.transform = 'translateX(-120%)';
+        document.getElementsByTagName('main')[0].style.overflowY = 'scroll';
+      }
+
+      let logoutModal = document.getElementById('logout-modal');
+      let logoutBtn = document.getElementById('logout-btn');
+      let subModal = document.getElementById('subscription-modal');
+      let subBtn = document.getElementById('subscription-btn');
+      let qrModal = document.getElementById('qr-modal');
+      let qrBtn = document.getElementById('qr-btn');
+      let logout = document.getElementById('confirm-logout');
+      let cancel = document.getElementById('cancel-logout');
+
+      // logout modal
+      logoutBtn.onclick = () => {
+        logoutModal.style.display = 'flex';
+        document.addEventListener('click', (e) => {
+          if(e.target == logoutModal) {
+            logoutModal.style.display = 'none';
+          }
+        });
+      };
+      logout.onclick = () => {
+        console.log('logout')
+      };
+      cancel.onclick = () => {
+        logoutModal.style.display = 'none';
+      };
+      
+      // subscription modal
+      subBtn.onclick = () => {
+        subModal.style.display = 'flex';
+        document.addEventListener('click', (e) => {
+          if(e.target == subModal) {
+            subModal.style.display = 'none';
+          }
+        });
+      }
+
+      // qr modal
+      qrBtn.onclick = () => {
+        qrModal.style.display = 'flex';
+        document.addEventListener('click', (e) => {
+          if(e.target == qrModal) {
+            qrModal.style.display = 'none';
+          }
+        });
+      }
     }
   </script>
 </body>

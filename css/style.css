@@ -434,6 +434,19 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.btn.btn-reg {
+  letter-spacing: 0;
+  padding: 3px;
+}
+
+.btn.btn-red {
+  background: #f53939;
+}
+
+.btn.btn-green {
+  background: #117600;
+}
+
 @media only screen and (max-width: 768px) {
   .btn {
     margin: 20px 0 20px 0;

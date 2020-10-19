@@ -15,7 +15,7 @@
       margin-top: 40px;
     }
 
-    .sub-modal-pay-btn {
+    .modal-footer-btn {
       display: flex;
       justify-content: center;
       padding: 20px 20px 0 20px;
@@ -52,7 +52,7 @@
           <p>Last payment: Aug 06, 2020</p>
           <p>Expires on: Aug 06, 2021</p>
         </div>
-        <div class="sub-modal-pay-btn">
+        <div class="modal-footer-btn">
           <button class="btn btn-reg">Go to Pay page</button>
         </div>
       </div>
@@ -61,7 +61,14 @@
 
   <div class="modal" id="qr-modal">
     <div class="modal-lg">
-      QR modal
+      <div class="flex-column">
+        <img src="./../img/qrCode.png" alt="" style="height: 250px" id="qr-code">
+        <div style="height: 50px"></div>
+        <p class="text-center"><b>This is your QR code.</b> Present this to the gym staff upon entrance to confirm your ongoing subscription.</p>
+        <div class="modal-footer-btn">
+          <button class="btn btn-reg" id="download-btn">Save as image</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -177,6 +184,7 @@
     </div>
   </main>
 
+  <script src="./../js/FileSaver.js"></script>
   <script>
     window.onload = () => {
       let sidebar = document.getElementById('sidebar').style;
@@ -234,6 +242,16 @@
             qrModal.style.display = 'none';
           }
         });
+      }
+
+      let downloadBtn = document.getElementById('download-btn');
+      let qr = document.getElementById('qr-code');
+
+      downloadBtn.onclick = () => {
+        let path = qr.getAttribute('src');
+        let fileName = 'qr-code';
+
+        saveAs(path, fileName);
       }
     }
   </script>

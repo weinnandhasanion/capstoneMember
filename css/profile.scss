@@ -33,7 +33,7 @@ main {
     width: 100%;
 
     img {
-      height: 13vh;
+      height: 22vw;
     }
 
     .name-id {
@@ -113,17 +113,19 @@ main {
 @media screen and (min-width: 414px) {
   .profile-cont {
     top: 10vh !important;
+
+    img {
+      height: 19vw !important;
+    }
   }
 }
 
 // iPhone 6/7/8
 @media screen and (max-width: 375px) {
   .profile-cont {
-    top: 9vh !important;
+    top: 10vh !important;
 
-    img {
-      height: 12vh !important;
-    }
+    
   }
 }
 // iPhone X

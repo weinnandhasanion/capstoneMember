@@ -1066,7 +1066,7 @@ main .profile-cont {
 }
 
 main .profile-cont img {
-  height: 13vh;
+  height: 22vw;
 }
 
 main .profile-cont .name-id {
@@ -1162,14 +1162,14 @@ main .main-cont .details button {
   .profile-cont {
     top: 10vh !important;
   }
+  .profile-cont img {
+    height: 19vw !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .profile-cont {
-    top: 9vh !important;
-  }
-  .profile-cont img {
-    height: 12vh !important;
+    top: 10vh !important;
   }
 }
 

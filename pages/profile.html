@@ -68,7 +68,7 @@
         <div class="close-modal">
           <span href="#" onclick="closeModal(this.parentNode.parentNode.parentNode.parentNode)">&#x2716;</span>
         </div>
-        <img src="./../img/qrCode.png" alt="" style="height: 250px" id="qr-code">
+        <img src="./../img/qrCode.png" alt="" style="height: 250px" id="qr-code" readonly>
         <div style="height: 50px"></div>
         <p class="text-center"><b>This is your QR code.</b> Present this to the gym staff upon entrance to confirm your ongoing subscription.</p>
         <div class="modal-footer-btn">
@@ -115,8 +115,8 @@
     </div>
   </div>
   <main>
-    <div class="menu" id="menu">
-      <i class="material-icons" style="font-size: 32px;" id="back">menu</i>
+    <div class="menu">
+      <i class="material-icons" style="font-size: 32px;" id="menu">menu</i>
       <h2>Profile</h2>
     </div>
     <div class="profile-cont">
@@ -193,18 +193,7 @@
   <script src="./../js/FileSaver.js"></script>
   <script>
     window.onload = () => {
-      let sidebar = document.getElementById('sidebar').style;
-      document.getElementById('menu').onclick = () => {
-        sidebar.transition = '0.5s';
-        sidebar.transform = 'translateX(0)';
-        document.getElementsByTagName('main')[0].style.overflowY = 'hidden';
-      }
-
-      document.getElementById('back').onclick = () => {
-        sidebar.transform = 'translateX(-120%)';
-        document.getElementsByTagName('main')[0].style.overflowY = 'scroll';
-      }
-
+      let sidebar = document.getElementById('sidebar');
       let logoutModal = document.getElementById('logout-modal');
       let logoutBtn = document.getElementById('logout-btn');
       let subModal = document.getElementById('subscription-modal');
@@ -213,6 +202,30 @@
       let qrBtn = document.getElementById('qr-btn');
       let logout = document.getElementById('confirm-logout');
       let cancel = document.getElementById('cancel-logout');
+
+      document.getElementById('menu').onclick = () => {
+        sidebar.style.transition = '0.3s';
+        sidebar.style.transform = 'translateX(0)';
+        document.getElementsByTagName('main')[0].style.overflowY = 'hidden';        
+      }
+
+      document.addEventListener("click", (evt) => {
+        let menu = document.getElementById('menu');
+        let targetElement = evt.target;
+        do {
+          if (targetElement == sidebar || targetElement == menu || targetElement == logoutModal) {
+            return;
+          }
+          
+          targetElement = targetElement.parentNode;
+        } while (targetElement);
+        sidebar.style.transform = 'translateX(-120%)';
+    });
+
+      document.getElementById('back').onclick = () => {
+        sidebar.style.transform = 'translateX(-120%)';
+        document.getElementsByTagName('main')[0].style.overflowY = 'scroll';
+      }
 
       // logout modal
       logoutBtn.onclick = () => {

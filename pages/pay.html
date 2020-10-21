@@ -21,6 +21,25 @@
       padding: 20px 20px 0 20px;
       width: 80%;
     }
+
+    .list-div {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .list-item.left {
+      width: 50%;
+      text-align: left;
+    }
+
+    .list-item.right {
+      width: 50%;
+      text-align: right;
+    }
   </style>
 </head>
 <body>
@@ -86,7 +105,46 @@
       </div>
     </div>
     <div class="main-cont">
-
+      <div class="content">
+        <h2>Your subscription is currently <span class="text-green">ongoing.</span></h2>
+        <div class="list-div">
+          <div class="list-item left">
+            <h4>Availed promo(s)</h4>
+          </div>
+          <div class="list-item right" style="display: flex; align-items: center !important; justify-content: flex-end;">
+            <h4>Student</h4>
+            <i class="material-icons text-disabled" style="font-size: 13px">help</i>
+          </div>
+        </div>
+        <div class="list-div">
+          <div class="list-item left">
+            <h4>Monthly Subscription</h4>
+          </div>
+          <div class="list-item right">
+            <h4>P649.00 <span class="text-green" id="paydate">Paid</span></h4>
+            <small>Expires on 09/14/2020</small>
+          </div>
+        </div>
+        <div class="list-div">
+          <div class="list-item left">
+            <h4>Annual Membership</h4>
+          </div>
+          <div class="list-item right">
+            <h4>P199.00 <span class="text-green" id="paydate">Paid</span></h4>
+            <small>Expires on 08/06/2021</small>
+          </div>
+        </div>
+        <hr style="border: 1px solid black; width: 100%">
+        <div class="list-div" style="margin-top: 0">
+          <div class="list-item left">
+            <small>To pay</small>
+          </div>
+          <div class="list-item right">
+            <h4>P0.00</h4>
+          </div>
+        </div>
+        <button class="btn btn-disabled fw-600">Pay P0.00</button>
+      </div>
     </div>
   </main>
 

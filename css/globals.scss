@@ -56,6 +56,21 @@ p, h1, h2, h3, h4, h5, h6 {
   color: $disabledText !important;
 }
 
+// backgrounds
+.bg-lighter {
+  background: $lighter !important;
+}
+.bg-green {
+  background: $green !important;
+}
+.bg-superlight {
+  background: #ebebeb !important;
+}
+
+.shadow-1 {
+  box-shadow: 0 0 20px 1px $primary;
+}
+
 // font weights
 .fw-100 {
   font-weight: 100;

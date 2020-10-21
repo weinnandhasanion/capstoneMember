@@ -48,7 +48,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {

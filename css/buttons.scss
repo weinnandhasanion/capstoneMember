@@ -11,13 +11,18 @@
   color: white;
   font-size: 1rem;
   transition: .3s;
-  font-weight: bold;
+  font-weight: 500;
 
   &:hover {
     color: $primary;
     background: white;
     cursor: pointer;
     font-weight: bold;
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
   }
 }
 

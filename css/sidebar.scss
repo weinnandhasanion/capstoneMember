@@ -2,7 +2,7 @@
 
 .sidebar {
   transform: translateX(-120%);
-  width: 85%;
+  width: 50vh;
   background: white;
   height: 100vh;
   padding: 20px;
@@ -14,6 +14,10 @@
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+
+    a, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+    }
 
     span {
       padding: 10px;

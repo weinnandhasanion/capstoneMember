@@ -6,6 +6,8 @@
 
 main {
   overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 
   .menu {
     padding-top: 20px;
@@ -113,6 +115,8 @@ main {
 @media screen and (min-width: 414px) {
   body {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
   }
 
   .profile-cont {
@@ -128,6 +132,8 @@ main {
 @media screen and (max-width: 375px) {
   body {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
   }
   
   .profile-cont {
@@ -138,6 +144,8 @@ main {
 @media screen and (min-height: 812px) {
   body {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
   }
   
   .profile-cont {
@@ -153,6 +161,8 @@ main {
 @media screen and (max-width: 320px) {
   body {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
   }
   
   p {

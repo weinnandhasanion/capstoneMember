@@ -191,7 +191,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   -webkit-transition: .3s;
   transition: .3s;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -199,6 +199,11 @@ p, h1, h2, h3, h4, h5, h6 {
   background: white;
   cursor: pointer;
   font-weight: bold;
+  outline: none;
+}
+
+.btn:active {
+  outline: none;
 }
 
 .btn.btn-reg {

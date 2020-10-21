@@ -48,7 +48,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {
@@ -178,7 +182,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .sidebar {
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
-  width: 85%;
+  width: 50vh;
   background: white;
   height: 100vh;
   padding: 20px;
@@ -197,6 +201,10 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.sidebar .items a, .sidebar .items a:hover, .sidebar .items a:active, .sidebar .items a:visited, .sidebar .items a:focus {
+  text-decoration: none;
 }
 
 .sidebar .items span {

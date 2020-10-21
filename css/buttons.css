@@ -204,6 +204,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .btn.btn-reg {
   letter-spacing: 0;
   padding: 3px;
+  font-weight: normal !important;
 }
 
 .btn.btn-red {

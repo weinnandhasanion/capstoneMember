@@ -48,7 +48,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {
@@ -267,7 +271,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {
@@ -444,7 +452,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {
@@ -581,9 +593,9 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #2c2c2c;
   color: white;
   font-size: 1rem;
-  letter-spacing: .1em;
   -webkit-transition: .3s;
   transition: .3s;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -596,6 +608,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .btn.btn-reg {
   letter-spacing: 0;
   padding: 3px;
+  font-weight: normal !important;
 }
 
 .btn.btn-red {
@@ -604,6 +617,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .btn.btn-green {
   background: #117600;
+}
+
+.btn.btn-disabled {
+  background: #E5E5E5;
+  color: #A0A0A0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -662,7 +680,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {
@@ -888,7 +910,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-green {
-  color: #117600;
+  color: #117600 !important;
+}
+
+.text-disabled {
+  color: #A0A0A0 !important;
 }
 
 .fw-100 {
@@ -1135,7 +1161,7 @@ main .main-cont {
   background: white;
   position: absolute;
   width: 100%;
-  height: auto;
+  min-height: 80vh;
   top: 20vh;
   border-radius: 25px 25px 0 0;
 }

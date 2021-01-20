@@ -6,7 +6,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./../css/activate.css">
   <link rel="icon" href="./../img/gym_logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Activate</title>
+  <style>
+    .logo {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    img {
+      margin-top: 0 !important;
+    }
+  </style>
 </head>
 <body>
   <!-- Success Modal -->
@@ -20,12 +31,14 @@
 
   <!-- Main -->
   <main>
+    <div class="back">
+      <a href="./../index.html"><i class="material-icons" style="font-size: 32px">keyboard_backspace</i></a>
+    </div>
     <div class="logo">
       <img src="./../img/gym_logo.png" alt="gym-logo">
       <p>California Fitness Gym</p>
     </div>
     <div class="container">
-      <br>
       <div class="text-center">Welcome, <b>John Doe</b>! </div>
       <br>
 
@@ -43,10 +56,6 @@
         <label for="conf-password">Confirm password</label>
       </div>
       <button class="btn" id="btn">Submit</button>
-    </div>
-
-    <div class="footer">
-      <small>Copyright © California Fitness Gym 2020</small>
     </div>
   </main>
 

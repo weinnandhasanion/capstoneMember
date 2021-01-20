@@ -1239,13 +1239,13 @@ main .icon-div {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 10vh;
+  top: 11vh;
   z-index: 2;
 }
 
 main .icon-div .icon-cont {
-  height: 20vh;
-  width: 20vh;
+  height: 18vh;
+  width: 18vh;
   background: white;
   border-radius: 100%;
   border: 5px solid #2c2c2c;

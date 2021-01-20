@@ -93,22 +93,30 @@
           <h2>Promos</h2>
         </span>
       </a>
-      <span>
-        <i class="material-icons">history</i>
-        <h2>Payment History</h2>
-      </span>
-      <span>
-        <i class="material-icons">settings</i>
-        <h2>Program</h2>
-      </span>
-      <span>
-        <i class="material-icons">notifications_active</i>
-        <h2>Notifications</h2>
-      </span>
-      <span>
-        <i class="material-icons">slow_motion_video</i>
-        <h2>Tutorials</h2>
-      </span>
+      <a href="./payment_history.html">
+        <span>
+          <i class="material-icons">history</i>
+          <h2>Payment History</h2>
+        </span>
+      </a>
+      <a href="./program.html">
+        <span>
+          <i class="material-icons">settings</i>
+          <h2>Program</h2>
+        </span>
+      </a>
+      <a href="./notifications.html">
+        <span>
+          <i class="material-icons">notifications_active</i>
+          <h2>Notifications</h2>
+        </span>
+      </a>
+      <a href="./tutorial.html">
+        <span>
+          <i class="material-icons">slow_motion_video</i>
+          <h2>Tutorials</h2>
+        </span>
+      </a>
     </div>
     <div class="logout">
       <button class="btn btn-red" style="width: 80%" id="logout-btn">Logout</button>
@@ -161,22 +169,6 @@
   <script src="./../js/sidebar.js"></script>
   <script>
     window.onload = () => {
-      // logout modal
-      logoutBtn.onclick = () => {
-        logoutModal.style.display = 'flex';
-        document.addEventListener('click', (e) => {
-          if(e.target == logoutModal) {
-            logoutModal.style.display = 'none';
-          }
-        });
-      };
-      logout.onclick = () => {
-        console.log('logout')
-      };
-      cancel.onclick = () => {
-        logoutModal.style.display = 'none';
-      };
-
       showPromo = (elem) => {
         let promoModal = document.getElementById('promo-modal');
         let promoName = document.getElementById('promo-name');

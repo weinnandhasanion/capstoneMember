@@ -27,3 +27,18 @@ document.addEventListener("click", (evt) => {
   sidebar.style.transform = 'translateX(-120%)';
   document.getElementsByTagName('main')[0].style.overflow = 'auto';
 });
+
+logoutBtn.onclick = () => {
+  logoutModal.style.display = 'flex';
+  document.addEventListener('click', (e) => {
+    if(e.target == logoutModal) {
+      logoutModal.style.display = 'none';
+    }
+  });
+};
+logout.onclick = () => {
+  window.location.href = './../index.html';
+};
+cancel.onclick = () => {
+  logoutModal.style.display = 'none';
+};

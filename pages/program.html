@@ -28,6 +28,13 @@
     .content button {
       width: 80%;
     }
+
+    .content > select {
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -108,60 +115,22 @@
         <div style="display: flex">
           <h2 style="font-size: 1.8em">Gaining Program <i class="material-icons text-disabled" style="font-size: 20px">help</i></h2>
         </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Target</th>
-              <th>Day 1</th>
-              <th>Day 2</th>
-              <th>Day 3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Upper<br>Body</strong></td>
-              <td>
-                1. Bench press - 3 sets 10 reps <br>
-                2. Bench press - 3 sets 10 reps <br>
-                3. Bench press - 3 sets 10 reps <br>
-              </td>
-              <td>
-                1. Standing biceps curl - 3 sets 10 reps <br>
-                2. Standing biceps curl - 3 sets 10 reps <br>
-                3. Standing biceps curl - 3 sets 10 reps <br>
-              </td>
-              <td>
-                1. Skull crusher press - 3 sets 10 reps <br>
-                2. Skull crusher press - 3 sets 10 reps <br>
-                3. Skull crusher press - 3 sets 10 reps <br>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Lower<br>Body</strong></td>
-              <td>
-                1. Barbell squats - 3 sets 10 reps <br>
-                2. Barbell squats - 3 sets 10 reps <br>
-                3. Barbell squats - 3 sets 10 reps <br>
-              </td>
-              <td>
-                1. Barbell deadlifts - 3 sets 10 reps <br>
-                2. Barbell deadlifts - 3 sets 10 reps <br>
-                3. Barbell deadlifts - 3 sets 10 reps <br>
-              </td>
-              <td>
-                1. Dumbell squats - 3 sets 10 reps <br>
-                2. Dumbell squats - 3 sets 10 reps <br>
-                3. Dumbell squats - 3 sets 10 reps <br>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Abdo-<br>minals</strong></td>
-              <td>Push-ups - 50 reps</td>
-              <td>Curl-ups - 50 reps</td>
-              <td>Knee-ins - 50 reps</td>
-            </tr>
-          </tbody>
-        </table>
+        <hr style="width: 80vw;">
+        <select id="programDay">
+          <option value="1">Day 1</option>
+          <option value="2">Day 2</option>
+          <option value="3">Day 3</option>
+        </select>
+        <h3 class="text-green">Upper Body</h3>
+        <p id="upper1">Bent-over row &#183; 3 sets &#183; 15 reps</p>
+        <p id="upper2">Bent-over row &#183; 3 sets &#183; 15 reps</p>
+        <p id="upper3">Bent-over row &#183; 3 sets &#183; 15 reps</p>
+        <h3 class="text-green">Lower Body</h3>
+        <p id="lower1">Bent-over row &#183; 3 sets &#183; 15 reps</p>
+        <p id="lower2">Bent-over row &#183; 3 sets &#183; 15 reps</p>
+        <p id="lower3">Bent-over row &#183; 3 sets &#183; 15 reps</p>
+        <h3 class="text-green">Abdominals</h3>
+        <p id="abdominal">Bent-over row &#183; 3 sets &#183; 15 reps</p>
         <button class="btn">Change your program</button>
       </div>
     </div>
